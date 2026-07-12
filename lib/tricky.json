@@ -1,0 +1,95 @@
+{
+  "Q1": {
+    "question": "Why doesn’t console.log(state) show updated value immediately?",
+    "answer": "Because state updates in React are asynchronous. React batches state updates for performance, so the updated state is available only after the component re-renders.",
+    "follow_up": "Use functional updates to access the latest state: setCount(prev => prev + 1);"
+  },
+  "Q2": {
+    "question": "What happens if you update state directly?",
+    "answer": "Directly mutating state does not trigger a re-render, so the UI will not update. React relies on state setters to know when to re-render.",
+    "wrong_example": "state.count = 5;",
+    "correct_example": "setCount(5);"
+  },
+  "Q3": {
+    "question": "Why do we need keys in lists?",
+    "answer": "Keys help React identify which list items have changed, been added, or removed. This improves rendering performance and prevents UI bugs.",
+    "note": "Avoid using array index as a key unless the list is static."
+  },
+  "Q4": {
+    "question": "Difference between controlled and uncontrolled components",
+    "answer": {
+      "controlled": "State is managed by React and input value is controlled using state and onChange.",
+      "uncontrolled": "State is managed by the DOM and accessed using refs."
+    }
+  },
+  "Q5": {
+    "question": "What is React.memo?",
+    "answer": "React.memo is a higher-order component that prevents re-rendering if the component’s props have not changed."
+  },
+  "Q6": {
+    "question": "Why use useCallback?",
+    "answer": "useCallback memoizes functions so that the same function reference is preserved between renders, preventing unnecessary re-renders of child components."
+  },
+  "Q7": {
+    "question": "Difference between useMemo and useCallback",
+    "answer": {
+      "useMemo": "Memoizes a computed value.",
+      "useCallback": "Memoizes a function."
+    }
+  },
+  "Q8": {
+    "question": "What is Strict Mode in React?",
+    "answer": "Strict Mode is a development-only feature that helps identify potential problems by intentionally running certain lifecycle methods and effects twice."
+  },
+  "Q9": {
+    "question": "Why does useEffect run twice in development?",
+    "answer": "Because React Strict Mode intentionally runs effects twice in development to detect side effects and unsafe operations."
+  },
+  "Q10": {
+    "question": "What causes an infinite re-render loop?",
+    "answer": "Updating state inside useEffect without a proper dependency array causes the effect to run on every render.",
+    "bad_example": "useEffect(() => { setCount(count + 1); });"
+  },
+  "Q11": {
+    "question": "How do you clean up effects?",
+    "answer": "By returning a cleanup function inside useEffect, such as clearing intervals, timeouts, or subscriptions.",
+    "example": "useEffect(() => { const id = setInterval(() => {}, 1000); return () => clearInterval(id); }, []);"
+  },
+  "Q12": {
+    "question": "What is lifting state up?",
+    "answer": "Lifting state up means moving shared state to the closest common parent so multiple child components can access and update it."
+  },
+  "Q13": {
+    "question": "What is prop drilling and how do you avoid it?",
+    "answer": "Prop drilling is passing props through multiple component levels unnecessarily. It can be avoided using the Context API or state management libraries."
+  },
+  "Q14": {
+    "question": "What is hydration in Next.js?",
+    "answer": "Hydration is the process where React attaches event listeners and makes server-rendered HTML interactive on the client."
+  },
+  "Q15": {
+    "question": "Why do hydration errors occur?",
+    "answer": "Hydration errors occur when the server-rendered HTML does not match the client-rendered output."
+  },
+  "Q16": {
+    "question": "Difference between useEffect and useLayoutEffect",
+    "answer": "useEffect runs after the browser paints the UI, while useLayoutEffect runs before paint and blocks rendering until it completes."
+  },
+  "Q17": {
+    "question": "What is reconciliation?",
+    "answer": "Reconciliation is React’s process of comparing the previous and current virtual DOM trees to efficiently update the real DOM."
+  },
+  "Q18": {
+    "question": "How do you optimize large lists?",
+    "answer": "By using pagination, list virtualization libraries like react-window or react-virtualized, and memoization."
+  },
+  "Q19": {
+    "question": "Why avoid anonymous functions in render?",
+    "answer": "Anonymous functions create new references on every render, which can cause unnecessary re-renders of child components."
+  },
+  "Q20": {
+    "question": "What happens when you pass a function to setState?",
+    "answer": "React provides the previous state safely, avoiding stale state issues and ensuring correct updates.",
+    "example": "setCount(prev => prev + 1);"
+  }
+}

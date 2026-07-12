@@ -1,0 +1,46 @@
+{
+  "tell_me_about_yourself": {
+    "question": "Tell me about yourself.",
+    "answer": "I am a Full Stack Developer with 1+ year of hands-on experience, currently working as a Junior React Developer at AdsHi5. I specialize in building scalable, responsive, and accessible web applications using React, Next.js, TypeScript, Tailwind CSS, and Node.js. I have worked on real-time features using WebSockets and recently contributed to a healthcare application with voice-driven workflows and dynamic clinical charts. I also have freelance experience where I handled end-to-end development, including frontend, backend APIs, and databases."
+  },
+  "why_looking_for_job_change": {
+    "question": "Why are you looking for a job now?",
+    "answer": "My current role has been a great learning experience, but the growth and technical exposure have become limited. I’m now looking for an opportunity that offers more complex challenges, deeper ownership, and a stronger learning curve where I can continue to grow as a full stack developer."
+  },
+  "current_role_and_responsibilities": {
+    "question": "What is your current role and responsibilities?",
+    "answer": "I currently work as a Junior React Developer at AdsHi5. My responsibilities include building responsive and reusable UI components using React and Tailwind CSS, integrating REST APIs, collaborating closely with backend teams, and implementing real-time features using WebSockets. I also focus on accessibility, performance optimization, and maintaining clean frontend architecture."
+  },
+  "technologies_you_work_with": {
+    "question": "What technologies do you work with?",
+    "answer": "On the frontend, I work with React, Next.js, TypeScript, JavaScript, Tailwind CSS, and Vite. On the backend, I have experience with Node.js, Django, REST APIs, and WebSockets. I’ve worked with MongoDB, MySQL, and PostgreSQL for databases, and I use Git and GitHub for version control."
+  },
+  "projects_worked_on": {
+    "question": "What projects have you worked on?",
+    "answer": "One of my key projects was a healthcare application called CareScribe. I worked on building real-time clinical dashboards, including a Periodontal Chart that updates live using WebSockets. The system integrates LLMs to convert doctor voice input into structured JSON data, which is then reflected dynamically on the UI. I also worked on freelance projects where I developed complete web solutions from frontend to backend."
+  },
+  "challenging_problem_solved": {
+    "question": "What is a challenging technical problem you solved?",
+    "answer": "While working on the real-time Periodontal Chart, we faced latency issues where LLM responses were taking more than 8 seconds. I debugged the data flow, optimized the prompt structure, and improved frontend-backend communication, which reduced the response time to around 2–3 seconds and significantly improved the user experience."
+  },
+  "frontend_strengths": {
+    "question": "What are your strengths as a frontend developer?",
+    "answer": "My strengths include strong React fundamentals, component-driven architecture, performance optimization, accessibility-focused design, and building clean, maintainable UIs. I pay close attention to user experience and collaborate effectively with designers and backend developers."
+  },
+  "backend_experience": {
+    "question": "Do you have backend experience?",
+    "answer": "Yes, I have hands-on backend experience using Node.js and Django. I’ve built RESTful APIs, integrated databases like MongoDB and PostgreSQL, and handled authentication, data modeling, and API integration for both freelance and professional projects."
+  },
+  "current_and_expected_ctc": {
+    "question": "What is your current CTC and expected CTC?",
+    "answer": "My current CTC is ___ LPA. Based on my skills, experience, and market standards, I’m expecting around ___ LPA. However, I’m flexible and open to discussion for the right opportunity and role."
+  },
+  "why_should_we_hire_you": {
+    "question": "Why should we hire you?",
+    "answer": "I bring hands-on experience building real-world applications, strong frontend fundamentals, and practical exposure to backend systems. I’m comfortable working on real-time features, focus on clean and scalable code, and collaborate well with cross-functional teams. I’m a quick learner and motivated to take ownership and grow with the team."
+  },
+  "career_goals": {
+    "question": "Where do you see yourself in the next 2–3 years?",
+    "answer": "In the next few years, I aim to grow into a strong full stack engineer who can design scalable systems, mentor junior developers, and contribute to high-impact products while continuously improving my technical depth."
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "Q1": {
+    "question": "Tell me about a recent project you worked on",
+    "answer": "I recently worked on a healthcare application called CareScribe, a voice-based system that converts doctor–patient conversations into structured clinical reports. I built scalable UI components and real-time charts, including a periodontal chart using WebSockets and LLM integration. I optimized response latency from around 8 seconds to 2–3 seconds by improving prompt design and processing logic. The tech stack included React, Next.js, Node.js, Tailwind CSS, and MySQL."
+  },
+  "Q2": {
+    "question": "How does React rendering work? How do you prevent re-renders?",
+    "answer": "React uses a virtual DOM to track UI changes. When state or props change, React compares the new virtual DOM with the previous one and updates only the changed parts in the real DOM. To prevent unnecessary re-renders, I avoid redundant state updates, split components effectively, and use React.memo, useCallback, and useMemo where appropriate."
+  },
+  "Q3": {
+    "question": "Difference between useEffect and useLayoutEffect",
+    "answer": "useEffect runs asynchronously after the browser paints the UI and is commonly used for data fetching and subscriptions. useLayoutEffect runs synchronously before the browser paints and is used when we need to measure or modify the DOM layout. In most cases, useEffect is sufficient."
+  },
+  "Q4": {
+    "question": "What is state vs props?",
+    "answer": "Props are read-only values passed from parent to child components. State is managed within a component and can change over time, triggering re-renders."
+  },
+  "Q5": {
+    "question": "What is useRef and where did you use it?",
+    "answer": "useRef stores mutable values that persist across renders without causing re-renders. I’ve used it to access DOM elements and to store references like timers and WebSocket connections."
+  },
+  "Q6": {
+    "question": "What is Next.js and its advantages?",
+    "answer": "Next.js is a React framework that provides server-side rendering, static site generation, file-based routing, and improved SEO and performance out of the box."
+  },
+  "Q7": {
+    "question": "Difference between CSR and SSR",
+    "answer": "CSR renders content in the browser after JavaScript loads, while SSR renders the page on the server and sends fully rendered HTML to the client, resulting in better SEO and faster initial load."
+  },
+  "Q8": {
+    "question": "How do you handle API calls in React?",
+    "answer": "I handle API calls using fetch or Axios inside useEffect, manage loading and error states, and clean up effects when necessary to avoid memory leaks."
+  },
+  "Q9": {
+    "question": "What is closure in JavaScript?",
+    "answer": "A closure is when a function retains access to variables from its outer scope even after the outer function has finished executing."
+  },
+  "Q10": {
+    "question": "Difference between let, var, and const",
+    "answer": "var is function-scoped and can be redeclared. let and const are block-scoped; let can be reassigned, while const cannot."
+  },
+  "Q11": {
+    "question": "What is async/await?",
+    "answer": "async/await is a syntax for handling promises that makes asynchronous code more readable and easier to maintain."
+  },
+  "Q12": {
+    "question": "What is event bubbling?",
+    "answer": "Event bubbling is when an event propagates from the target element up through its parent elements in the DOM hierarchy."
+  },
+  "Q13": {
+    "question": "What is Node.js?",
+    "answer": "Node.js is a JavaScript runtime built on Chrome’s V8 engine that allows JavaScript to run on the server."
+  },
+  "Q14": {
+    "question": "What are REST APIs?",
+    "answer": "REST APIs use standard HTTP methods such as GET, POST, PUT, and DELETE to perform CRUD operations between client and server."
+  },
+  "Q15": {
+    "question": "What is middleware in Express?",
+    "answer": "Middleware functions run between the request and response cycle and are used for tasks like authentication, logging, validation, and error handling."
+  },
+  "Q16": {
+    "question": "SQL vs NoSQL",
+    "answer": "SQL databases use structured schemas with tables and relationships, while NoSQL databases are schema-less and more flexible in handling unstructured data."
+  },
+  "Q17": {
+    "question": "Why MongoDB?",
+    "answer": "MongoDB is flexible, scalable, and works well with JSON-like documents, making it suitable for modern web applications."
+  },
+  "Q18": {
+    "question": "What are WebSockets?",
+    "answer": "WebSockets enable real-time, bidirectional communication between the client and server over a persistent connection."
+  },
+  "Q19": {
+    "question": "Where did you use WebSockets?",
+    "answer": "I used WebSockets in a healthcare application to update clinical charts in real time based on doctor voice input processed by an LLM."
+  },
+  "Q20": {
+    "question": "How do you debug issues?",
+    "answer": "I reproduce the issue, analyze logs and network requests, isolate the problematic component or API, and fix the issue incrementally."
+  },
+  "Q21": {
+    "question": "How do you improve performance?",
+    "answer": "By optimizing component re-renders, lazy loading components, reducing unnecessary API calls, and improving backend response times."
+  },
+  "Q22": {
+    "question": "What challenges did you face?",
+    "answer": "The main challenge was handling real-time latency and optimizing LLM responses while keeping the UI responsive and stable."
+  },
+  "Q23": {
+    "question": "How do you handle real-time data consistency?",
+    "answer": "By managing WebSocket connections carefully, validating incoming data, handling reconnections gracefully, and syncing state efficiently on the frontend."
+  },
+  "Q24": {
+    "question": "How do you collaborate with backend teams?",
+    "answer": "I collaborate by discussing API contracts early, reviewing payload structures, handling edge cases on the frontend, and debugging issues together using logs and network traces."
+  }
+}
