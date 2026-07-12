@@ -7,6 +7,16 @@ import { Button } from "@/components/ui/button";
 
 const projects = [
   {
+    title: "Semantic AI Support System",
+    description:
+      "An end-to-end automated support ticket handling system that classifies queries, routes teams, assigns priority, and drafts neural responses under 200ms.",
+    tech: ["React", "FastAPI", "Python", "scikit-learn"],
+    link: "#",
+    github: "https://github.com/aidharanigas/Support-Ticket-Handling.git",
+    image:
+      "https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&q=80&w=1000",
+  },
+  {
     title: "Employee Task Tracker",
     description:
       "A full-stack task management system enabling administrators to assign, track, and manage employee tasks with a React frontend and a Django REST API backend.",
@@ -74,7 +84,7 @@ export function Projects() {
     target: targetRef,
   });
 
-  const x = useTransform(scrollYProgress, [0, 1], ["0%", "-80%"]);
+  const x = useTransform(scrollYProgress, [0, 1], ["0%", "-85%"]);
 
   return (
     <section
