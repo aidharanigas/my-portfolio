@@ -7,6 +7,16 @@ import { Button } from "@/components/ui/button";
 
 const projects = [
   {
+    title: "Employee Task Tracker",
+    description:
+      "A full-stack task management system enabling administrators to assign, track, and manage employee tasks with a React frontend and a Django REST API backend.",
+    tech: ["React", "Django", "SQLite", "REST APIs"],
+    link: "#",
+    github: "https://github.com/aidharanigas/employee-task-tracker.git",
+    image:
+      "https://images.unsplash.com/photo-1540350394557-8d14678e7f91?auto=format&fit=crop&q=80&w=1000",
+  },
+  {
     title: "Django Blog Application",
     description:
       "A secure blog platform with authentication, password reset, and role-based dashboards using Django MVT architecture.",
@@ -64,7 +74,7 @@ export function Projects() {
     target: targetRef,
   });
 
-  const x = useTransform(scrollYProgress, [0, 1], ["0%", "-75%"]);
+  const x = useTransform(scrollYProgress, [0, 1], ["0%", "-80%"]);
 
   return (
     <section
